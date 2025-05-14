@@ -1,33 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
 body {
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: black;
-    color: #f6f6f6;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  color: #f6f6f6;
+ flex-direction: column;
+}
+header{
+    background-color: #59fdfd;
+    padding: 15px;
+}
+main{
+    flex: 1;
 }
 .tituloDestaque {
-    color: #59fdfd;
+  color: #59fdfd;
 }
 .apresentacao {
-    margin: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  /* margin: 10% 15%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.apresentacaoConteudo{
-    width: 615px;
+.apresentacaoConteudo {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  margin: 50px;
 }
 .apresentacaoConteudo h1 {
-    font-size: 36px;
-    font-family: "Krona One", sans-serif;
+  font-size: 30px;
+  font-family: "Krona One", sans-serif;
 }
 .apresentacaoConteudo p {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.redes h2 {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.redes a {
+  /* background-color: #59fdfd; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 200px;
+  border: 2px solid #59fdfd;
+  border-radius: 10px 0;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+  color: #f6f6f6;
+}
+.redes a:hover {
+  background-color: #272727;
+  color: aqua;
+  font-size: 17px;
+}
+.image img {
+  width: 400px;
+  margin: 10px;
+}
+footer {
+  background-color: #59fdfd;
+  padding: 20px;
+  width: 100%;
+}
+footer p {
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
 }
