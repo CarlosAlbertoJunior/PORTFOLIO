@@ -31,7 +31,7 @@ nav {
 
 nav a {
   font-family: var(--font-pricipal);
-  font-size: 1, 25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
   margin: 0 30px;
@@ -62,8 +62,9 @@ main {
   gap: 30px;
   margin: 50px;
 }
+
 .apresentacaoConteudo h1 {
-  font-size: 1, 875rem;
+  font-size: 1.875rem;
   font-family: var(--font-secundaria);
 }
 .apresentacaoConteudo p {
@@ -81,14 +82,14 @@ main {
 .redes h2 {
   font-family: var(--font-secundaria);
   font-weight: 400;
-  font-size: 1, 25rem;
+  font-size: 1.25rem;
 }
 .redes a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 200px;
+  width: 50%;
   border: 2px solid var(--cor-quartenaria);
   border-radius: 10px 0;
   font-size: 0.938rem;
@@ -105,7 +106,7 @@ main {
   font-size: 1.063rem;
 }
 .image img {
-  width: 400px;
+  width: 70%;
   margin: 10px;
 }
 /* SOBRE  */
@@ -140,4 +141,35 @@ footer p {
   font-weight: 400;
   font-family: var(--font-pricipal);
   font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+   .menu nav a {
+    font-size: 70%;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .apresentacaoConteudo h1, p {
+    font-size: 1.05rem;
+  }
+  .sobremim {
+    margin: 1%;
+  }
+  .sobremim h1{
+    font-size: 1.30rem;
+  }
+  .sobremim h2 {
+    font-size: 1rem;
+  }
+
+  .sobremim p {
+    font-size: 1rem;
+  }
+ 
+  footer p {
+    font-size: 1rem;
+  }
+
+
 }
